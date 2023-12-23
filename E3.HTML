@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+<!-- Asset Management-->
+    <a-assets>
+<!-- Ground-->
+<img id="skytexture" src="desert.jpg">
+    </a-assets>
+
+<!-- Camera -->
+
+<a-scene>
+<a-box id="green" height="1" width="1" depth="1" color="green" position="0 0 -7">
+    <a-animation attribute="rotation" to="0 360 0" dur="3000" repeat="indefinite" easing="linear"></a-animation>
+    </a-box>
+
+    <a-cylinder id="green" height=0.4" width="1" depth="1" color="green" position="18 1 -3">
+        <a-animation attribute="rotation" to="360 0 0" dur="3000" repeat="indefinite" easing="linear"></a-animation>
+        </a-cylinder>
+    <a-sky src="#skytexture"></a-sky>
+
+</a-scene>
+</body>
+</html>
